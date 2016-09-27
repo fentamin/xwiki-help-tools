@@ -1,0 +1,31 @@
+PAGE.PY - to add simple xwiki page
+----------------------------------
+
+usage: page.py [-h] [--url [URL]] [--username [USERNAME]]
+               [--password [PASSWORD]] [--parent [PARENT]] [--title [TITLE]]
+               [--wiki [WIKI]] [--content [CONTENT]]
+               [--attachments [ATTACHMENTS [ATTACHMENTS ...]]]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --url [URL], -U [URL]
+                        base url of your xwiki, http://192.168.0.1:8080/xwiki
+                        e.g.; you also can use XWIKI_URL system variable to
+                        specify
+  --username [USERNAME], -u [USERNAME]
+                        XWIKI username, system variable - XWIKI_USER
+  --password [PASSWORD], -p [PASSWORD]
+                        XWIKI password, system variable XWIKI_PWD
+  --parent [PARENT], -P [PARENT]
+                        point separated path to your page home, XWiki.New
+                        Pages e.g.
+  --title [TITLE], -c [TITLE]
+                        your page title
+  --wiki [WIKI], -W [WIKI]
+                        if you use non-default wiki home you can specify
+                        other, default : xwiki
+  --content [CONTENT], -C [CONTENT]
+                        file with your page content, will be readed from STDIN
+                        if not specified
+  --attachments [ATTACHMENTS [ATTACHMENTS ...]], -a [ATTACHMENTS [ATTACHMENTS ...]]
+                        files will be attached to your page
